@@ -13,8 +13,6 @@ import elements
 import propagate
 import pickle
 import numpy as np
-from mathmatrix import arnoldi
-# import test_pro as pg
 
 # Inializting the optical elements of beamline
 source = elements.LightSource(
@@ -25,7 +23,7 @@ source = elements.LightSource(
     optic_pixelsize = [0.5, 0.5],
     )
 source.gauss_source()
-#
+
 crl = elements.OpticElements(
     source_class = source,
     name = "crl",
@@ -37,19 +35,9 @@ crl = elements.OpticElements(
     optic_focus = 29.3e6
     )
 
-bent = elements.OpticElements(
-    source_class = source,
-    name = "bent_compare",
-    order = 2,
-    optic_location = 63.0e6,
-    optic_planesize = [35, 35],
-    optic_pixelsize = [2.4, 2.4],
-    optic_planecount = 5041,
-    )
-
 slit = elements.OpticElements(
     source_class = source,
-    name = "secsource_comparefortran",
+    name = "secsource_slit",
     order = 3,
     optic_location = 69.3e6,
     optic_planesize = [10, 13],
@@ -59,7 +47,7 @@ slit = elements.OpticElements(
 
 sample = elements.OpticElements(
         source_class = source,
-        name = "test_sample_coherentmodewithfortran",
+        name = "test_sample",
         order = 4,
         optic_location = 72.0e6,
         optic_planesize = [64, 64],
