@@ -53,9 +53,9 @@ secondary_source = elements.OpticElements(
     name = "secondary_source",
     order = 2,
     optic_location = 69.3e6,
-    optic_planesize = [30, 14],
+    optic_planesize = [30, 15],
     optic_pixelsize = [0.5, 0.5],
-    optic_planecount = 915,
+    optic_planecount = 1891,
     )
 
 if __name__ == '__main__':

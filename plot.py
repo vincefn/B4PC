@@ -38,7 +38,7 @@ x = np.linspace(-30*0.5, 30*0.5, 61)
 y = np.linspace(-15*0.5, 15*0.5, 31)
 intensity = secondary_source.intensity
 
-plt.figure(figsize = (8, 4))
+plt.figure(figsize = (6, 3))
 plt.pcolor(x, y, intensity, cmap = 'jet') 
 plt.colorbar()
 
@@ -51,6 +51,6 @@ x = np.linspace(-64*0.1575, 64*0.1575, 129)
 y = np.linspace(-64*0.1575, 64*0.1575, 129)
 intensity = sample_plane.intensity
 
-plt.figure(figsize = (5, 5))
+plt.figure(figsize = (5, 4))
 plt.pcolor(x, y, intensity, cmap = 'jet') 
 plt.colorbar()

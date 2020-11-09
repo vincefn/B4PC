@@ -37,7 +37,7 @@ secondary_source = pickle.load(open("secondary_source_intensity.pkl", 'rb'))
 x = np.linspace(-30*0.5, 30*0.5, 61)
 y = np.linspace(-15*0.5, 15*0.5, 31)
 
-plt.figure(figsize = (8, 4))
+plt.figure(figsize = (6, 3))
 plt.pcolor(x, y, secondary_source, cmap = 'jet') 
 plt.colorbar()
 
@@ -49,7 +49,7 @@ sample_plane = pickle.load(open("sample_plane_intensity.pkl", 'rb'))
 x = np.linspace(-64*0.1575, 64*0.1575, 129)
 y = np.linspace(-64*0.1575, 64*0.1575, 129)
 
-plt.figure(figsize = (6, 5))
+plt.figure(figsize = (5, 4))
 plt.pcolor(x, y, sample_plane, cmap = 'jet') 
 plt.colorbar()
 
