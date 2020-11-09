@@ -17,7 +17,7 @@ packages：
 Two examples are provided:
 
 1. The simulation of secondary source (Figure.2 of paper);
-2. The simulation of the intensity at the sample palne (Figure.7a of the paper).
+2. The simulation of the intensity at the sample plane (Figure.7a of the paper).
 
 Both examples have been verifed in a desktop.
 * CPU：Intel(R) Core(TM) i7-6700 CPU @ 3.40GHZ 3.41GHZ
