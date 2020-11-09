@@ -1,6 +1,7 @@
 # B4PC
 
 #---------------------------------------------------------------------------------------#
+
 "A Wave Optics Model for the Effect of Partial Coherence on Coherent Diffractive Imaging"
 
 alpha version 
@@ -12,6 +13,7 @@ packages：numpy      1.18.4
           matplotlib 3.2.1
           
 #---------------------------------------------------------------------------------------#
+
 Two examples are provided:
 
 1. The simulation of secondary source (Figure.2 of paper);
@@ -22,6 +24,7 @@ CPU：Intel(R) Core(TM) i7-6700 CPU @ 3.40GHZ 3.41GHZ
 RAM: 16.0GB
 
 #---------------------------------------------------------------------------------------#
+
 Operation：
 
 Example 1: mpiexec -n k python secondary_source.py
@@ -38,6 +41,7 @@ sample_plane.pkl.
 The secondary_source.pkl and sample_plane.pkl can be shown by plot.py.
 
 #---------------------------------------------------------------------------------------#
- If you have any other questions please feel free to contact me.
- xuhan@ihep.ac.cn
+
+If you have any other questions please feel free to contact me.
+xuhan@ihep.ac.cn
 
