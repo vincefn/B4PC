@@ -28,6 +28,7 @@ RAM: 16.0GB
 Operation：
 
 Example 1: mpiexec -n k python secondary_source.py
+
 Example 2: mpiexec -n k python slit.py
            mpiexec -n k python sample_plane.py
 
@@ -42,6 +43,6 @@ The secondary_source.pkl and sample_plane.pkl can be shown by plot.py.
 
 #---------------------------------------------------------------------------------------#
 
-If you have any other questions please feel free to contact me.
+If you have any other questions please feel free to contact me:
 xuhan@ihep.ac.cn
 
