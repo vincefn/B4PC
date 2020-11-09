@@ -33,9 +33,9 @@ Example 2: mpiexec -n k python slit.py;
 For the computer for verification, k was set as 6.
 
 A successful calculation will generates three files:
-* secondary_source.pkl;
-* slit.pkl;
-* sample_plane.pkl.
+* secondary_source.pkl
+* slit.pkl
+* sample_plane.pkl
 
 The secondary_source.pkl and sample_plane.pkl can be shown by plot.py.
 
