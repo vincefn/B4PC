@@ -45,11 +45,11 @@ plt.colorbar()
 #-----------------------------------------------------------------------------#
 # plot sample plane
 
-secondary_source = pickle.load(open("sample_plane.pkl", 'rb'))
+sample_plane = pickle.load(open("sample_plane.pkl", 'rb'))
 
 x = np.linspace(-64*0.1575, 64*0.1575, 129)
 y = np.linspace(-64*0.1575, 64*0.1575, 129)
-intensity = secondary_source.intensity
+intensity = sample_plane.intensity
 
 plt.figure(figsize = (5, 5))
 plt.pcolor(x, y, intensity, cmap = 'jet') 
