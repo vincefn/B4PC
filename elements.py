@@ -140,6 +140,7 @@ class LightSource(object):
         with open(self.name + ".pkl", "wb") as file:
             pickle.dump(self, file)
             file.close()
+        np.savez_compressed(self.name + ".npz", intensity=self.intensity,amplitude=self.amplitude, phase=self.phase)
             
             
 class OpticElements(object):
@@ -212,6 +213,7 @@ class OpticElements(object):
         with open(self.name + ".pkl", "wb") as file:
             pickle.dump(self, file)
             file.close()
+        np.savez_compressed(self.name + ".npz", intensity=self.intensity, amplitude=self.amplitude, phase=self.phase, wavefront=np.array(self.wavefront), lens=np.array(self.lens))
     
     def save_without_wavefronts(self):
         """Save the element without the wavefronts"""
